@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(219, 211, 200);
+    margin-left: 50px;
+}
+.apply-button{
+background-color: blue;
+
+}
+.apply-button:hover{
+    background-color: aqua;
+}

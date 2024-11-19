@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4bc; /* Cream color background */
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the two nav groups */
+    background-color: black; /* Black background */
+    padding: 10px; /* Padding for the nav bar */
+  }
+  
+  .navbar-left, .navbar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-left li, .navbar-right li {
+    margin: 0 10px; /* Adjusts space between navigation items */
+  }
+  
+  .navbar-left a, .navbar-right a {
+    text-decoration: none;
+    color: white; /* White text color */
+    padding: 10px;
+  }
+  
+  .navbar-left a:hover, .navbar-right a:hover {
+    background-color:black;
+    color:orange /* Dark grey background on hover */
+  }
+  
+  .home-section {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    align-items: center; /* Center align vertically */
+    padding: 20px;
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+  }
+  
+  .background-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .background-image img {
+    border: 5px solid white; /* White border around the image */
+    max-width: 100%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center the text */
+    
+  }
+  
+  .right h1 {
+    font-size: 5em;
+    color: #000; /* Black text */
+    font-family: 'Arial', sans-serif;
+    text-decoration: wavy;
+    font-family: 'Algerian', sans-serif;
+  }
+
+  #about{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .upper-half {
+    flex: 1;
+    background: url('Screenshot\ 2024-11-07\ 120626.png') no-repeat center center; /* Replace with your image URL */
+    background-size: cover; /* Cover the div with the image */
+    border-bottom: 10px solid white; /* White border at the bottom */
+  }
+  
+  .lower-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white; /* Cream color background */
+  }
+  
+  .lower-half h1 {
+    font-size: 5em;
+    color: #000; /* Text color */
+  }
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 550px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    font-size: 150px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+.job-section {
+  display: flex;
+  justify-content: space-around; /* Space out the cards evenly */
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly increase the size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #45a049; /* Darker green background */
+}
+
+.job-listings {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.job {
+  border-bottom: 1px solid #ddd;
+  padding: 45px 0;
+}
+
+.job:last-child {
+  border-bottom: none;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.job-details {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.job-location {
+  color: #888;
+}
+.viewall-button{
+  background-color: #ff6347;
+  size: 50px;
+}
+ 
+ 
+
+
+.apply-button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+
+.apply-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.apply-button:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
+footer {
+  background-color: #151515;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family:cursive;
+}
+
+.footer-content p {
+  font-size: 16px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-content .socials {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-content .socials li {
+  margin: 0 10px;
+}
+
+.footer-content .socials a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-content .socials a:hover {
+  color: #ff6347;
+}
+
+.footer-bottom {
+  background-color: #9e9e9e;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #000 ;
+}
+.socials img {
+  width: 45px;
+  transition: transform 0.3s ease
+  
+}
+
+.socials img:hover {
+  transform: scale(1.08);
+}

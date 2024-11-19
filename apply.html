@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Apply For Job</h2>
+        <form id="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" placeholder="+91" required>
+
+            <label for="adress">Adress1:</label>
+            <input type="tel" id="adress" name="adress" placeholder="Corrent Adress" required>
+
+            <label for="adress">Adress2:</label>
+            <input type="tel" id="adress" name="adress" placeholder="permanent Adress" required>
+
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Drop Your Message" required></textarea>
+
+            <button class="button" type="submit" id="button">Submit</button>
+        </form>
+    </div>
+    
+<script src="apply.js"></script>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('2HiRGPRllgYe_lTT0')
+</script>
+
+</body>
+</html>
